@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Message</title>
+    <link rel="stylesheet" href="success.css">
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            <h1>Success!</h1>
+            <p>Your action was successful.</p>
+            <p>Redirecting to dashboard in 5 seconds...</p>
+        </div>
+    </div>
+
+    <script>
+        // Define the number of seconds before redirection
+        const secondsBeforeRedirect = 5;
+
+        // Function to redirect the user to the dashboard
+        function redirectToDashboard() {
+            window.location.href = 'dashboard.php';
+        }
+
+        // Set a timeout to call the redirectToDashboard function after the specified seconds
+        setTimeout(redirectToDashboard, secondsBeforeRedirect * 1000);
+    </script>
+</body>
+</html>
